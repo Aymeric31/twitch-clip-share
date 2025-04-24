@@ -69,9 +69,7 @@ The workflow is already configured in `.github/workflows/cron.yml`. It is set to
 ## **How It Works**
 
 1. The script retrieves recent Twitch clips from the last 24 hours using the Twitch API.
-2. It compares the retrieved clips with previously sent clips stored in `clips_sent.json`.
-3. New clips are sent to Discord via the webhook.
-4. The list of sent clips is updated and stored securely using GitHub Artifacts.
+2. New clips are sent to Discord via the webhook.
 
 ---
 

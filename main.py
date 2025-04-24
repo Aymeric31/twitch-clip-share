@@ -70,6 +70,8 @@ def load_sent_clips():
 
 # Save sent clips to the JSON file if they are new
 def save_sent_clips_if_new(clips):
+    os.makedirs(os.path.dirname(CLIPS_LOG_FILE), exist_ok=True)
+    
     # Sort clips by their ID to ensure consistent order
     clips_sorted = sorted(clips, key=lambda clip: clip["id"])
     existing_clips = load_sent_clips()

@@ -1,5 +1,4 @@
 
-```markdown
 # **Twitch Clips to Discord**
 
 This project automates the process of retrieving recent Twitch clips from a specific channel and sending them to a Discord channel using a webhook. The script is designed to run daily via GitHub Actions.

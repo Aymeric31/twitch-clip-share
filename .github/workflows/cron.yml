@@ -23,7 +23,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: clips_sent
-          path: ./data
+          path: ./data/clips_sent.json
         continue-on-error: true # Ignore the error if the artifact does not exist yet
 
       - name: Install dependencies

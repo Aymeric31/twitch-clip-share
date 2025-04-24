@@ -3,7 +3,8 @@ name: Twitch Clips to Discord
 on:
   schedule:
     - cron: "05 18 * * *" # Every day at 15:00 GMT+1
-
+  workflow_dispatch:
+  
 jobs:
   send_clips:
     runs-on: ubuntu-latest
